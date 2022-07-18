@@ -5,7 +5,7 @@
 # velocity v are given by the equations
 # h = h0 + v0t - 1/2gt²
 # v = v0 - gt
-# where g = 9.8 m/s², the accelaration due to gravity
+# where g = 9.8 m/s², the acceleration due to gravity
 # This script calculates the height h and velocity v at a time t
 # after the ball is thrown.
 h0 = 1.6        # meter
@@ -16,3 +16,5 @@ g = 9.8         # m/s²
 h = h0 + v0*t - (g*t**2)/2
 v = v0 - g*t
 
+print(h)
+print(v)
