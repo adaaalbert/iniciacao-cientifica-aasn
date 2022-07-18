@@ -1,5 +1,5 @@
 # Introduction to Python Science & Eng. - Pine
-# Exercises - chapter 2
+# Chapter 2 - Exercise 1
 # A ball is thrown vertically up in the air from a height h0 above
 # the ground at an initial velocity v0 . Its subsequent height h and
 # velocity v are given by the equations
