@@ -1,20 +1,23 @@
-# Introduction to Python Science & Eng. - Pine
-# Chapter 2 - Exercise 1
-# A ball is thrown vertically up in the air from a height h0 above
-# the ground at an initial velocity v0 . Its subsequent height h and
-# velocity v are given by the equations
-# h = h0 + v0t - 1/2gt²
-# v = v0 - gt
-# where g = 9.8 m/s², the acceleration due to gravity
-# This script calculates the height h and velocity v at a time t
-# after the ball is thrown.
-h0 = 1.6        # meter
-v0 = 14.2       # m/s, meters/second
-t = 2.0         # time in s
-g = 9.8         # m/s²
+"""Introduction to Python Science & Eng. - Pine
+Chapter 2 - Exercise 1
+A ball is thrown vertically up in the air from a height initial_height above
+the ground at an initial velocity initial_speed. Its subsequent height height
+and velocity speed are given by the equations
+height = initial_height + v0t - 1/2gt²
+speed = initial_speed - gt
+where GRAVITY = 9.8 m/s², the acceleration due to gravity
+This script calculates the height height and velocity speed at a time time
+after the ball is thrown.
+"""
 
-h = h0 + v0*t - (g*t**2)/2
-v = v0 - g*t
+GRAVITY = 9.8               # m/s²
 
-print(h)
-print(v)
+initial_height = 1.6        # meter
+initial_speed = 14.2        # m/s, meters/second
+time = 2.0                  # s
+
+height = initial_height + initial_speed * time - (GRAVITY * time ** 2) / 2
+speed = initial_speed - GRAVITY * time
+
+print(f'Height: {height:.3f} m')
+print(f'Speed: {speed:.3f} m/s')
