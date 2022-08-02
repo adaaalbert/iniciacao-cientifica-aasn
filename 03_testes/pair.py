@@ -1,2 +1,2 @@
-def eh_par(numero):
-    return numero % 2 == 0
+def is_pair(number):
+    return number % 2 == 0
