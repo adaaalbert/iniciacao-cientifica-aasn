@@ -1,7 +1,8 @@
 # this project
 .vscode/
 .idea/
-aux/
+aux/Adde
+.chemistry/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
