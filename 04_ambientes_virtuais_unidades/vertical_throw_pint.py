@@ -12,9 +12,22 @@ GRAVITY = Q_(9.8, 'm/s**2')
 
 @ureg.wraps('m', ('m', 'm/s', 's'))
 def height(initial_height, initial_speed, time):
-    """Returns the height of a vertical throw after given time and speed.-"""
+   """
+   Calculates height of a thrown object after a given time & intial speed.
 
-    return initial_height + initial_speed * time - (1/2) * GRAVITY.magnitude * time**2
+   Parameters
+   ----------
+   initial_height
+   initial_speed
+   time
+
+   Returns
+   -------
+
+   """
+
+    return initial_height + initial_speed * time - \
+           (1 / 2) * GRAVITY.magnitude * time ** 2
 
 
 if __name__ == '__main__':
