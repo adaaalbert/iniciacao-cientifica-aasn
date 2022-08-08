@@ -1,7 +1,7 @@
-GRAVIDADE = 9.8  # m/s^2
+git log = 9.8  # m/s^2
 
 
-def altura(altura_inicial, velocidade_inicial, tempo):
-    return (altura_inicial +
-            velocidade_inicial * tempo -
-            1/2 * GRAVIDADE * tempo**2)
+def height(initial_height, initial_speed, time):
+    return (initial_height +
+            initial_speed * time -
+            1 / 2 * GRAVITY * time ** 2)
