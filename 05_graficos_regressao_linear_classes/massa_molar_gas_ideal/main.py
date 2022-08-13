@@ -30,12 +30,15 @@ plot_params(ax)
 x = np.linspace(valores_densidade[0].magnitude,
                 valores_densidade[-1].magnitude, 50)
 y = regressao.slope * x + regressao.intercept
-ax.plot(x, y, color='red', zorder=-1)
-ax.scatter(valores_densidade, pressao_sobre_densidade, s=60)
+ax.plot(x, y, color='red', zorder=-1, label='Reta teórica')
+ax.scatter(valores_densidade, pressao_sobre_densidade, s=60,
+           label='Pontos experimentais')
 ax.set_xlabel(r'$\rho$ / $g \cdot \ell^{-1}$', fontsize=18)
 ax.set_ylabel(r'$\frac{P}{\rho}$ / $bar \cdot \ell \cdot g^{-1}$', fontsize=18)
-ax.text(2, 0.56, f'y = {regressao.slope:.3e}x + {regressao.intercept:.3e}',
-        fontsize=14, bbox=dict(facecolor='red', alpha=0.9))
+ax.text(2, 0.56, f'y = {regressao.slope:.3e}x + {regressao.intercept:.3e} \n '
+                 f'$R^2=${regressao.rvalue**2:.4f}', fontsize=14,
+        bbox=dict(facecolor='red', alpha=0.9))
+ax.legend()
 
 print(massa_molar.to('g/mol'))
 plt.show()
